@@ -11,8 +11,10 @@ https://jistarki.github.io/Valor_Ambiental_POC/
 
 - `index.html` — prototipo completo. No requiere build ni servidor: se puede
   abrir directamente en el navegador.
-- `.github/workflows/pages.yml` — publica el contenido de la raíz en GitHub
-  Pages en cada push a `main`.
+- `.nojekyll` — evita el procesamiento Jekyll al servir el sitio.
+
+El sitio se publica con GitHub Pages en modo *Deploy from a branch*
+(`main`, carpeta `/ (root)`): cada push a `main` republica el sitio.
 
 ## Dependencias externas
 
